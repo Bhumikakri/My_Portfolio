@@ -1,0 +1,148 @@
+.Navbar {
+  display: flex;
+  /* border: 2px solid green; */
+  width: 90%;
+  justify-content: space-between;
+  padding-top: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  background-color: transparent;
+}
+.Navbar.scrolled {
+  display: flex;
+  /* border: 2px solid green; */
+  background-color: rgb(42, 61, 55);
+  color: #e1fff6;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+}
+.title {
+  display: flex;
+  width: fit-content;
+}
+.title.scrolled {
+  display: flex;
+  width: fit-content;
+}
+.title.scrolled h1 {
+  font-size: 2rem;
+  position: relative;
+  color: #e1fff6;
+  /* border: 2px solid red; */
+  padding-right: 1.2rem;
+}
+.title.scrolled h1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  background-color: rgb(42, 61, 55);
+  width: 100%;
+  animation: typeWriter 6s steps(20) alternate infinite;
+}
+.title h1 {
+  font-size: 3rem;
+  position: relative;
+  color: rgb(2, 36, 28);
+  /* border: 2px solid red; */
+  padding-right: 1.2rem;
+}
+.title h1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  background-color: #e1fff6;
+  width: 100%;
+  animation: typeWriter 6s steps(20) alternate infinite;
+}
+.Options {
+  display: flex;
+  gap: 1.5rem;
+}
+.Options.scrolled a {
+  color: rgb(255, 255, 255);
+}
+.Options h2:hover {
+  cursor: pointer;
+  color: coral;
+}
+.contactOption {
+  display: none;
+}
+.contactOption.scrolled {
+  display: block;
+}
+
+@media (min-width: 749px) and (max-width: 1100px) {
+  .Main {
+    /* border: 2px solid rgb(0, 255, 76); */
+    width: 100%;
+  }
+  .HomePage {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .title h1 {
+    display: none !important;
+  }
+  .title {
+    display: none;
+  }
+  .Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Options {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+  .Main {
+    width: 100%;
+  }
+  .HomePage {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .title h1 {
+    display: none !important;
+  }
+  .title {
+    display: none;
+  }
+  .Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .Options {
+    display: flex;
+    gap: 5px;
+  }
+
+  .Navbar.scrolled {
+    
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  .Options.scrolled a h2{
+   font-size: 0.8rem;
+  }
+}

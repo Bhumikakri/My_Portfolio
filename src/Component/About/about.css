@@ -1,0 +1,105 @@
+.AboutPage {
+  width: 100%;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.AboutPage h1 {
+  font-size: 5rem;
+  color: rgb(5, 56, 39);
+  text-shadow: 5px 4px 2px rgb(24, 201, 142);
+}
+.Abouts {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.LeftAbouts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  width: 40%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+.LeftAbouts button {
+  padding: 0.6rem;
+  width: 100px;
+  background-color: transparent;
+  color: rgb(5, 56, 39);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid rgb(5, 56, 39);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.LeftAbouts button:hover {
+  background-color: rgb(6, 48, 35);
+  color: rgb(162, 248, 212);
+}
+.skillImage {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+.skillImage img {
+  width: 100px;
+}
+.skillImage img:hover {
+  transform: scale(1.5);
+}
+/* skill component section */
+.Skillpage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Skillpage h1 {
+  font-size: 5rem;
+  color: rgb(117, 29, 78);
+  text-shadow: 5px 4px 2px rgb(24, 201, 142);
+  font-family: cursive;
+}
+.Skills {
+  padding: 1rem;
+  width: 80%;
+  background-color: rgb(255, 218, 95);
+  border-radius: 15px;
+}
+.skill {
+  width: 98%;
+  margin: 10px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #eee;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #0a3f24;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 40em){
+  .Abouts{
+    flex-direction: column;
+  }
+  .LeftAbouts {
+    width: 100%;
+  }
+  .skillImage{
+    width: 100%;
+  }
+}

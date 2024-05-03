@@ -1,0 +1,133 @@
+.HomePage{
+    width:57% ;
+    height: 100%;
+    display: flex;
+    padding: 1rem; 
+    justify-content: space-between;
+    height:fit-content;
+    border-radius: 15px;
+    border:  1px solid rgb(255, 255, 255);
+    box-shadow: 4px 5px 8px 5px rgb(0, 0, 0);
+    background-color: rgba(228, 239, 252, 0.986);
+}
+.contents{
+    height: fit-content;
+}
+.myImage{
+    width: 320px;
+    height: 380px;
+    border-radius: 20px;
+    /* box-shadow: 3px 2px 10px 10px rgb(10, 10, 10); */
+}
+span{
+    color: rgb(2, 17, 31);
+    font-size: 2.5rem;
+}
+.heading{
+    font-size: 4rem;
+    color: rgb(2, 17, 31);
+}
+.Buttons{
+    width: 80%;
+    display: flex;
+    padding-top: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+.Buttons button{
+    padding: 0.5rem;
+    background-color: transparent;
+    color: rgb(3, 24, 43);
+    font-size: 1.1rem;
+    border: 1px solid rgb(3, 24, 43);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Buttons button a{
+    background-color: transparent;
+    color: rgb(3, 24, 43);
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Buttons button a:hover{
+    background-color: rgb(5, 34, 48);
+    color: rgb(255, 255, 255);
+}
+.Buttons button:hover{
+    background-color: rgb(5, 34, 48);
+    color: rgb(255, 255, 255);
+}
+.developer{
+    color: blue;
+    font-size: 2.3rem;
+    /* border: 2px solid red; */
+    width: fit-content;
+    padding-right: 1.5rem;
+    text-shadow: 1px 3px 5px rgb(15, 15, 15);
+}
+.developer{
+    position: relative;
+}
+.developer::after{
+   content: "|";
+   position: absolute;
+   right: 0;
+   background-color: rgba(228, 239, 252, 0.986);
+   color: rgb(63, 162, 248);
+   width: 100%;
+   animation: typeWriter 6s steps(20) alternate infinite;
+}
+
+.myImage{
+    position: relative;
+}
+
+.myImage::after{
+    content: "|";
+   position: absolute;
+   bottom: 0;
+   background-color: rgb(42, 61, 55);
+   color: rgb(63, 162, 248);
+   height: 100%;
+   animation: typeImage 6s steps(20) alternate infinite;
+}
+
+@keyframes typeWriter {
+    to{
+        width: 0%;
+    }
+}
+
+@keyframes typeImage {
+  from { opacity: 0; } 
+  to { opacity: 1; } 
+}
+
+@media only screen and (max-width: 40em){
+    .HomePage{
+        width: 100%;
+    }
+    .heading{
+        font-size: 2.3rem;
+        color: rgb(2, 17, 31);
+    }
+
+    .developer{
+        color: blue;
+        font-size: 1.4rem;
+        /* border: 2px solid red; */
+        width: fit-content;
+        padding-right: 1.5rem;
+        text-shadow: 1px 3px 5px rgb(15, 15, 15);
+    }
+    .myImage{
+        width: 260px;
+        height: 300px;
+        border-radius: 20px;
+        /* box-shadow: 3px 2px 10px 10px rgb(10, 10, 10); */
+    }
+  }
+
+
